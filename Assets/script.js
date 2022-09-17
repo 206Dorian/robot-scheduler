@@ -7,14 +7,17 @@ var currentHour = moment().format("HH")
 var textAreas = $("textarea")
 console.log(textAreas)
 
+
+// var save = 
 //iterate thru all the text areas and compare their id value to moments current time
+
 for (let index = 0; index < textAreas.length; index++) {
   var id = textAreas[index].id;
+  parseInt
   console.log(id)
 }
 
 //if else statement to compare id to current hour 
-
 
 if (id > currentHour){
 $(textAreas).addClass("past");
@@ -32,8 +35,12 @@ if (id < currentHour){
 
 //add a background color to each 
 
-//
+// function rowUpdater(){
+//   $(textAreas).each(function(){
+//     console.log(this)
+// }};
 
+// rowUpdater
 
 
 
