@@ -2,45 +2,37 @@
 var currentDay = $("#currentDay");
 currentDay.text(moment().format('MMM DD, YYYY [at] hh:mm:ss a'))
 
-var currentHour = moment().format("HH")
-//each texr area color coded depending on the hour 
+var currentHour = parseInt(moment().format("HH"))
+
+//each text area color coded depending on the hour 
 var textAreas = $("textarea")
 console.log(textAreas)
 
 
-// var save = 
-//iterate thru all the text areas and compare their id value to moments current time
+//changed the for loop to a for each loop, to grab each box. Added 
+// Did ParseInt to change strings to numbers. 
 
-for (let index = 0; index < textAreas.length; index++) {
-  var id = textAreas[index].id;
-  parseInt
-  console.log(id)
+function updateBlox() {
+  $(textAreas).each(function () {
+    var id = parseInt($(this).attr("id"));
+
+    if (id < currentHour) {
+      $(this).addClass("past");
+      // if current hour is past then make the textArea =class.past
+    }
+
+    if (id == currentHour) {
+      $(this).addClass("present");
+    }
+
+    if (id > currentHour) {
+      $(this).addClass("future");
+    }
+
+  })
 }
+updateBlox()
 
-//if else statement to compare id to current hour 
-
-if (id > currentHour){
-$(textAreas).addClass("past");
-// if current hour is past then make the textArea =class.past
-}
-
-if (id = currentHour){
-  $(textAreas).addClass("present");
-}
-
-if (id < currentHour){
-  $(textAreas).addClass("future");
-}
-// then what ??
-
-//add a background color to each 
-
-// function rowUpdater(){
-//   $(textAreas).each(function(){
-//     console.log(this)
-// }};
-
-// rowUpdater
 
 
 
