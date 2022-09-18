@@ -3,12 +3,12 @@
 
 As a busy Gal on the go who is doing a coding bootcamp, while simultaneously trying to stay mentally, emotionally and physically healthy I knew I need a scheduler to help organize my life, what I needed was a robot scheduler! 
 
-Stay Tuned!
+
+<img src="Assets/Scheduler.png"  alt= "screenshot of deployed website">
 
 
-<img src="/images/Quest-Uuhhnns quiz.png">
+https://206dorian.github.io/robot-scheduler/
 
-https://206dorian.github.io/JS-Coding-Quizz-/
 
 Credits
 N/A
