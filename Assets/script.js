@@ -8,7 +8,6 @@ var currentHour = parseInt(moment().format("HH"))
 var textAreas = $("textarea")
 console.log(textAreas)
 
-
 //changed the for loop to a for each loop, to grab each box. Added 
 // Did ParseInt to change strings to numbers. 
 
